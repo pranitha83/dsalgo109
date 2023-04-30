@@ -22,7 +22,7 @@ public class Arrays extends BasePage {
 	@FindBy(xpath = "//a[text()='Try here>>>']") WebElement tryHere;
 
 	@FindBy(xpath ="//form[@id='answer_form']/div/div/div/textarea") WebElement textbox;
-
+@FindBy(css = "div[class='CodeMirror-lines']") WebElement texteditorbox;
 	@FindBy(xpath ="//button[text()='Run']") WebElement runbutton;
 
 	@FindBy(xpath = "//pre[@id='output']") WebElement output;
@@ -30,7 +30,12 @@ public class Arrays extends BasePage {
 	@FindBy(linkText = "Arrays Using List") WebElement Arraysusinglist;
 	@FindBy(linkText = "Basic Operations in Lists")WebElement BOInList;
 	@FindBy(linkText = "Applications of Array") WebElement AppOfArray;
-	
+	@FindBy(linkText = "Practice Questions") WebElement PraQuestions;
+	@FindBy(linkText = "Search the array") WebElement Question1;
+	@FindBy(linkText = "Max Consecutive Ones") WebElement Question2;
+	@FindBy(linkText = "Find Numbers with Even Number of Digits") WebElement Question3;
+	@FindBy(xpath = "//a[text()='Squares of  a Sorted Array']") WebElement Question4;
+	@FindBy(xpath = "//span[@role='presentation']") WebElement Quetxtbox;
 	
 	
 	
@@ -61,10 +66,7 @@ public class Arrays extends BasePage {
 
 	}
 	public void textclear() {
-		/*while (txtclr.getText().equals("")) {
-	        txtclr.sendKeys(Keys.BACK_SPACE);
-	       }
-//txtclr.getText().equals("");*/
+		
 		driver.navigate().back();
 	}
 
@@ -73,15 +75,6 @@ public class Arrays extends BasePage {
 	}
 	public String outPut() {
 		
-		
-
-		
-	//boolean isRequired=false;
-	//String alerttxt=alert.getText();
-		//System.out.println("Alert : "+alerttxt);
-		//return isRequired;
-	
-
 	return output.getText(); 
 		
 	}
@@ -98,5 +91,27 @@ public class Arrays extends BasePage {
 	public void ApplOfArray() {
 		AppOfArray.click();
 	}
-	
+	public void PraQues() {
+		PraQuestions.click();
+	}
+	public void que1() {
+		Question1.click();
+	}
+	public void que2() {
+		Question2.click();
+	}
+	public void que3() {
+		Question3.click();
+	}
+	public void que4() {
+		Question4.click();
+	}
+	public void txteditorclr()  {
+		//texteditorbox.isSelected();
+		String s = Keys.chord(Keys.CONTROL,"a");
+		
+		textbox.sendKeys(s);
+		textbox.sendKeys(Keys.DELETE);
+		//Thread.sleep(1000);
+	}
 }

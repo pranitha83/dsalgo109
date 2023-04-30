@@ -94,6 +94,7 @@ public class ArraysStepdf extends BasePage {
 		  
 
 	   arrays.textclear();
+	   Thread.sleep(1000);
 	  }
 	@When("The user enter invalid python code in tryEditor from sheet {string} and {int}")
 	public void the_user_enter_invalid_python_code_in_try_editor_from_sheet_and(String string, Integer int1) throws InvalidFormatException, IOException {
@@ -143,7 +144,34 @@ ExcelReader reader = new ExcelReader();
 	 arrays.ApplOfArray();
 	}
 
-	
+	@Given("User click on Practies Questions")
+	public void user_click_on_practies_questions() {
+	   arrays.PraQues();
+	}
 
+	@When("User click on Question1 its navigate to tryeditor page")
+	public void user_click_on_question1_its_navigate_to_tryeditor_page() {
+	   arrays.que1();
+	}
+
+	@When("User clear the tryeditor textbox")
+	public void user_clear_the_tryeditor_textbox() throws InterruptedException {
+	   arrays.txteditorclr();
+	   Thread.sleep(1000);
+	}
+	@When("User click on Question2 its navigate to tryeditor page")
+	public void user_click_on_question2_its_navigate_to_tryeditor_page() {
+	  arrays.que2();
+	}
+
+	@When("User click on Question3 its navigate to tryeditor page")
+	public void user_click_on_question3_its_navigate_to_tryeditor_page() {
+	    arrays.que3();
+	}
+
+	@When("User click on Question4 its navigate to tryeditor page")
+	public void user_click_on_question4_its_navigate_to_tryeditor_page() {
+	 arrays.que4();
+	}
 	
 }
