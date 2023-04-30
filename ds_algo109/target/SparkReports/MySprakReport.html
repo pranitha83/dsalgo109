@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 27, 2023 10:58:16 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 30, 2023 12:32:50 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -76,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -84,31 +79,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tag5</a>
+<a class="dropdown-item" href="#">@tag8</a><a class="dropdown-item" href="#">@tag6</a><a class="dropdown-item" href="#">@tag10</a><a class="dropdown-item" href="#">@tag7</a><a class="dropdown-item" href="#">@tag9</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">User enter valid and invalid credentials for login</p>
+            <p class="name">Evaluate arrays module</p>
             <p class="text-sm">
-              <span>10:58:17 PM</span> / <span>00:00:20:285</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:32:52 AM</span> / <span>00:00:40:625</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">User enter valid and invalid credentials for login</h5>
-<span class='badge badge-success'>04.27.2023 10:58:17 PM</span>
-<span class='badge badge-danger'>04.27.2023 10:58:37 PM</span>
-<span class='badge badge-default'>00:00:20:285</span>
+<h5 class="test-status text-pass">Evaluate arrays module</h5>
+<span class='badge badge-success'>04.30.2023 12:32:52 AM</span>
+<span class='badge badge-danger'>04.30.2023 12:33:32 AM</span>
+<span class='badge badge-default'>00:00:40:625</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -120,125 +115,351 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User on login page and login with inavalid and validinputs from Excel"<Sheetname>" and<RowNumber></div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having Arrays in Python Topic</div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.ArraysStepdf.user_click_on_get_started_button_on_array_module_and_navigate_to_array_page()">
+                <span>Given User click on get started button on array module and navigate to array page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.ArraysStepdf.user_click_on_arrays_in_python_topic_and_navigate_to_arrays_in_python_page()">
+                <span>When User click on Arrays in Python Topic and navigate to arrays in python page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>User on login page and login with inavalid and validinputs from Excel"Sheet1" and0</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
+                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
+              <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given The user is on login page</span>
+                    <span>Given User click on Try here button on Arrays in Python page and navigate to try edidor page</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter sheet"Sheet1" and 0</span>
+                    <span>When The user enter valid python code in tryEditor from sheet "Sheet1" and 0</span>
       <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>Then click login button</span>
-      <div>
-        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[]> but was:<[Please fill out this field.]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepdefinitions.LoginSteps.click_login_button(LoginSteps.java:74)
-	at ✽.click login button(file:///C:/Users/yours/Desktop/Pranitha_workspace/ds_algo109/src/test/resources/Features/tloginPage.feature:9)
-</textarea>
-      
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>AllHooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>User on login page and login with inavalid and validinputs from Excel"Sheet1" and0
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../ScreenShots/embedded1.png' src="../ScreenShots/embedded1.png">
-    
-    </div></div>
-</div>
+                    <span>And User click on run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should be presented with run result</span>
       <div>
       </div>
                   </div>
               </div>
             </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run invalid python code</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with inavalid and validinputs from Excel"Sheet1" and1</div>
+                  <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run invalid python code</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given The user is on login page</span>
+                    <span>Given User click on Try here button on Arrays in Python page and navigate to try edidor page</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter sheet"Sheet1" and 1</span>
+                    <span>When The user enter invalid python code in tryEditor from sheet "Sheet1" and 1</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then click login button</span>
+                    <span>And User click on run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should get alert message</span>
       <div>
       </div>
                   </div>
               </div>
             </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with inavalid and validinputs from Excel"Sheet1" and2</div>
+                  <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given The user is on login page</span>
+                    <span>Given User click on Arrays Using List topic</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter sheet"Sheet1" and 2</span>
+                    <span>And click Try here button and navigate to try edidor page</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then click login button</span>
+                    <span>When The user enter valid python code in tryEditor from sheet "Sheet1" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should be presented with run result</span>
       <div>
       </div>
                   </div>
               </div>
             </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run invalid python code</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with inavalid and validinputs from Excel"Sheet1" and3</div>
+                  <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run invalid python code</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given The user is on login page</span>
+                    <span>Given User click on Arrays Using List topic</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter sheet"Sheet1" and 3</span>
+                    <span>And click Try here button and navigate to try edidor page</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then click login button</span>
+                    <span>When The user enter invalid python code in tryEditor from sheet "Sheet1" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should get alert message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="47"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User click on basic Operations in Lists</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click Try here button and navigate to try edidor page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter valid python code in tryEditor from sheet "Sheet1" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should be presented with run result</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run invalid python code</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run invalid python code</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User click on basic Operations in Lists</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click Try here button and navigate to try edidor page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter invalid python code in tryEditor from sheet "Sheet1" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should get alert message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User click on Applications of Array</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click Try here button and navigate to try edidor page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter valid python code in tryEditor from sheet "Sheet1" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should be presented with run result</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="77"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to tryeditor page and run valid python code</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User click on Applications of Array</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click Try here button and navigate to try edidor page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter invalid python code in tryEditor from sheet "Sheet1" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User should get alert message</span>
       <div>
       </div>
                   </div>
@@ -258,26 +479,26 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">org.junit.ComparisonFailure</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@tag8</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.junit.ComparisonFailure</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@tag8</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -288,13 +509,23 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:58:26 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:33:19 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='8'>Then click login button</a>
+<a href="#" class="linked" test-id='1' id='27'>User is able to navigate to tryeditor page and run valid python code</a>
 <div class="">
-<span class="badge badge-default">User enter valid and invalid credentials for login.User on login page and login with inavalid and validinputs from Excel"Sheet1" and0.Then click login button</span>
+<span class="badge badge-default">Evaluate arrays module.User is able to navigate to tryeditor page and run valid python code</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:33:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>User is able to navigate to tryeditor page and run invalid python code</a>
+<div class="">
+<span class="badge badge-default">Evaluate arrays module.User is able to navigate to tryeditor page and run invalid python code</span>
 </div>
 </td>
 </tr>
@@ -302,36 +533,18 @@
 </table>
 </div>
 </li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@tag5</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">@tag6</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@tag5</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@tag6</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -342,43 +555,151 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:58:17 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:32:52 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>User on login page and login with inavalid and validinputs from Excel"Sheet1" and0</a>
+<a href="#" class="linked" test-id='1' id='2'>The user is able to navigate to a page having Arrays in Python Topic</a>
 <div class="">
-<span class="badge badge-default">User enter valid and invalid credentials for login.User on login page and login with inavalid and validinputs from Excel"Sheet1" and0</span>
+<span class="badge badge-default">Evaluate arrays module.The user is able to navigate to a page having Arrays in Python Topic</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@tag10</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tag10</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:33:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='67'>User is able to navigate to tryeditor page and run valid python code</a>
+<div class="">
+<span class="badge badge-default">Evaluate arrays module.User is able to navigate to tryeditor page and run valid python code</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:58:29 PM</td>
+<td>00:33:29 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='10'>User on login page and login with inavalid and validinputs from Excel"Sheet1" and1</a>
+<a href="#" class="linked" test-id='1' id='77'>User is able to navigate to tryeditor page and run valid python code</a>
 <div class="">
-<span class="badge badge-default">User enter valid and invalid credentials for login.User on login page and login with inavalid and validinputs from Excel"Sheet1" and1</span>
+<span class="badge badge-default">Evaluate arrays module.User is able to navigate to tryeditor page and run valid python code</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@tag7</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tag7</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:33:13 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>User is able to navigate to tryeditor page and run valid python code</a>
+<div class="">
+<span class="badge badge-default">Evaluate arrays module.User is able to navigate to tryeditor page and run valid python code</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:58:32 PM</td>
+<td>00:33:17 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='17'>User on login page and login with inavalid and validinputs from Excel"Sheet1" and2</a>
+<a href="#" class="linked" test-id='1' id='18'>User is able to navigate to tryeditor page and run invalid python code</a>
 <div class="">
-<span class="badge badge-default">User enter valid and invalid credentials for login.User on login page and login with inavalid and validinputs from Excel"Sheet1" and2</span>
+<span class="badge badge-default">Evaluate arrays module.User is able to navigate to tryeditor page and run invalid python code</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@tag9</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tag9</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:33:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>User is able to navigate to tryeditor page and run valid python code</a>
+<div class="">
+<span class="badge badge-default">Evaluate arrays module.User is able to navigate to tryeditor page and run valid python code</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:58:34 PM</td>
+<td>00:33:25 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='24'>User on login page and login with inavalid and validinputs from Excel"Sheet1" and3</a>
+<a href="#" class="linked" test-id='1' id='57'>User is able to navigate to tryeditor page and run invalid python code</a>
 <div class="">
-<span class="badge badge-default">User enter valid and invalid credentials for login.User on login page and login with inavalid and validinputs from Excel"Sheet1" and3</span>
+<span class="badge badge-default">Evaluate arrays module.User is able to navigate to tryeditor page and run invalid python code</span>
 </div>
 </td>
 </tr>
@@ -399,25 +720,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 27, 2023 10:58:16 PM</h3>
+<h3>Apr 30, 2023 12:32:50 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 27, 2023 10:58:37 PM</h3>
+<h3>Apr 30, 2023 12:33:33 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -433,12 +754,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -456,9 +777,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='75%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>9</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='25%'><b>1</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -476,9 +797,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='92%'><b>12</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>40</b> steps passed</small></div>
 <div>
-<small data-tooltip='7%'><b>1</b> steps failed,
+<small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -495,7 +816,7 @@
 </div></div>
 <script>
 var timeline = {
-"User enter valid and invalid credentials for login":20.285
+"Evaluate arrays module":40.625
 };
 </script>
 <div class="row">
@@ -505,12 +826,44 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@tag5</td>
-<td>3</td>
+<td>@tag8</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tag6</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>75%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tag10</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tag7</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@tag9</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -547,19 +900,19 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
-failChild: 1,
+passChild: 9,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 12,
-failGrandChild: 1,
+passGrandChild: 40,
+failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
