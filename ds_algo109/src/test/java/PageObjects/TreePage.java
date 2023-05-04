@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import stepdefinitions.Combase;
+import DriverFactory.driversetup;
+import stepdefinitions.BasePage;
 
-public class TreePage extends Combase{
+public class TreePage extends BasePage{
 
 	WebDriver driver;
 
@@ -17,37 +18,39 @@ public class TreePage extends Combase{
 	@FindBy(xpath = "//*[@id=\"navbarCollapse\"]//a[contains(text(), 'Data Structures')]") WebElement dropdown;
 	@FindBy(xpath = "//*[@id='navbarCollapse']//a[contains(@href, '/tree')]") WebElement dropdown_tree;
 
-	@FindBy(xpath = "//*[@href='overview-of-trees']") WebElement overviewOfTreesLink; //1
-	@FindBy(xpath = "//*[@href='terminologies']") WebElement terminologiesLink; //2
-	@FindBy(xpath = "//*[@href='types-of-trees']") WebElement typesoftreesLink; //3
-	@FindBy(xpath = "//*[@href='tree-traversals']") WebElement treetraversalsLink; //4
-	@FindBy(xpath = "//*[@href='traversals-illustration']") WebElement trav_illustrationsLink; //5
-	@FindBy(xpath = "//*[@href='binary-trees']") WebElement binarytreesLink; //6
-	@FindBy(xpath = "//*[@href='types-of-binary-trees']") WebElement typesofBinaryTreesLink; //7
-	@FindBy(xpath = "//a[@href='implementation-in-python']") WebElement implementationInPythonLink; //8
-	@FindBy(xpath = "//a[@href='binary-tree-traversals']") WebElement binaryTreeTraversalsLink; //9
-	@FindBy(xpath = "//a[@href='implementation-of-binary-trees']") WebElement implementationOfBinaryTreesLink; //10
-	@FindBy(xpath = "//a[@href='applications-of-binary-trees']") WebElement applicationsOfBinaryTreesLink; //11
-	@FindBy(xpath = "//a[@href='binary-search-trees']") WebElement binarySearchTreesLink; //12
-	@FindBy(xpath = "//a[@href='implementation-of-bst']") WebElement implementationOfBSTLink; //13
-	@FindBy(xpath = "//a[@href='/tree/practice']") WebElement practiceQuestionLink; //14
+	@FindBy(linkText = "Overview of Trees") WebElement overviewOfTreesLink; //1
+	@FindBy(linkText="Terminologies") WebElement terminologiesLink; //2
+	@FindBy(linkText = "Types of Trees") WebElement typesoftreesLink; //3
+	@FindBy(linkText = "Tree Traversals") WebElement treetraversalsLink; //4
+	@FindBy(linkText =  "Traversals-Illustration") WebElement trav_illustrationsLink; //5
+	@FindBy(linkText = "Binary Trees") WebElement binarytreesLink; //6
+	@FindBy(linkText = "Types of Binary Trees") WebElement typesofBinaryTreesLink; //7
+	@FindBy(linkText = "Implementation in Python") WebElement implementationInPythonLink; //8
+	@FindBy(linkText = "Binary Tree Traversals") WebElement binaryTreeTraversalsLink; //9
+	@FindBy(linkText = "Implementation of Binary Trees") WebElement implementationOfBinaryTreesLink; //10
+	@FindBy(linkText = "Applications of Binary trees") WebElement applicationsOfBinaryTreesLink; //11
+	@FindBy(linkText = "Binary Search Trees") WebElement binarySearchTreesLink; //12
+	@FindBy(linkText = "Implementation Of BST") WebElement implementationOfBSTLink; //13
+	@FindBy(linkText = "Practice Questions") WebElement practiceQuestionLink; //14
 
 	@FindBy(xpath = "//a[@href='/tryEditor']") WebElement TryHereLink;
-	@FindBy(xpath = "//textarea[@tabindex='0']") WebElement editorInput;
+	@FindBy(xpath="//form[@id='answer_form']/div/div/div/textarea") WebElement editorInput;
 	@FindBy(xpath = "//*[@id='answer_form']/button") WebElement runButton;
 	@FindBy(id = "output") static WebElement output;
 
-	public TreePage() {
+	public TreePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void dropdown_Tree() {
+	public void dropdown() {
 		dropdown.click();
-		dropdown_tree.click();
+		
 	}
-
+public void dropdown_tree() {
+	dropdown_tree.click();
+}
 	public String getTreePageTitle() {
-		String title = driver.getTitle();
+		String title = driversetup.getTitle();
 		return title;
 	}
 
@@ -59,8 +62,8 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput(String code, String output) {
-		editorInput.sendKeys(code);
+	public void userInput(String pythoncode, String output) {
+		editorInput.sendKeys(pythoncode);
 	}
 
 	public void clickOnRun() {
@@ -80,9 +83,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_tl(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_tl() {
 		runButton.click();
@@ -96,10 +97,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_ttp(String code, String output) {
-		editorInput.sendKeys(code);
-	}
-
+	
 	public void clickOnRun_ttp() {
 		runButton.click();
 	}
@@ -112,9 +110,8 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_ttl(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
+	
 
 	public void clickOnRun_ttl() {
 		runButton.click();
@@ -128,9 +125,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_ti(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_ti() {
 		runButton.click();
@@ -144,9 +139,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_btl(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_btl() {
 		runButton.click();
@@ -160,9 +153,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_tbt(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_tbt() {
 		runButton.click();
@@ -176,9 +167,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_ip(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_ip() {
 		runButton.click();
@@ -192,9 +181,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_btt(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_btt() {
 		runButton.click();
@@ -208,9 +195,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_ibt(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_ibt() {
 		runButton.click();
@@ -224,9 +209,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_abt(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_abt() {
 		runButton.click();
@@ -240,9 +223,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_bst(String code, String output) {
-		editorInput.sendKeys(code);
-	}
+	
 
 	public void clickOnRun_bst() {
 		runButton.click();
@@ -256,10 +237,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_ibst(String code, String output) {
-		editorInput.sendKeys(code);
-	}
-
+	
 	public void clickOnRun_ibst() {
 		runButton.click();
 	}
@@ -272,10 +250,7 @@ public class TreePage extends Combase{
 		TryHereLink.click();
 	}
 
-	public void userInput_pq(String code, String output) {
-		editorInput.sendKeys(code);
-	}
-
+	
 	public void clickOnRun_pq() {
 		runButton.click();
 	}
