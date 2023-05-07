@@ -14,7 +14,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, //reporting purpose-- html reports are created
 		monochrome=true,  //console output color and eliminate junk characters
 		//dryRun=false, // (=true)->compilation purpose mostly to chk stepdefinitions are implemented or not
-		tags = "@Arrays", //tags from feature file
+		tags = "", //tags from feature file
 		features = {"src/test/resources/Features"}, //location of feature files, we can give this way-->".//features//"
 		glue= {"stepdefinitions","AllHooks"}) //location of step definition files, gives granural level of info in test result
 
